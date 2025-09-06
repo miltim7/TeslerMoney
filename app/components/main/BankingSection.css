@@ -1,0 +1,141 @@
+/* ========== Banking ========== */
+.banking {
+    padding: var(--padding);
+}
+
+.banking__image img {
+    width: 680px;
+    height: 680px;
+}
+
+.banking__title {
+    font-weight: 600;
+    font-size: var(--font-size-titles);
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.banking_buttons {
+    display: flex;
+    column-gap: 15px;
+    margin-top: 15px;
+}
+
+.banking__table {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
+}
+
+.banking__table--firts-item {
+
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    line-height: 100%;
+    color: rgba(38, 36, 34, 1);
+}
+
+.banking__table--second-item {
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    max-width: 230px;
+    opacity: 0.8;
+    color: rgba(38, 36, 34, 1);
+}
+
+.banking__text {
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    line-height: 112.00000000000001%;
+    color: rgba(38, 36, 34, 0.7);
+}
+
+.banking__btn {
+    padding: var(--padding-btn);
+    font-weight: 500;
+    font-size: var(--font-size-btn);
+    border: none;
+    border-radius: 30px;
+}
+
+.banking__btn--primary {
+    background: rgba(30, 115, 224, 1);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    height: 46px;
+}
+
+.banking__content {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.banking__item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.banking__item--img {
+    width: 45px;
+    height: 45px;
+}
+
+.banking__item--block {
+    background: rgba(247, 246, 249, 1);
+    border-radius: 20px;
+    display: flex;
+    height: 100%;
+    position: relative;
+    padding: 25px;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.banking__item--block.primary {
+    background: rgba(30, 115, 224, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.banking__item--block.secondary {
+    background: linear-gradient(180deg, rgba(34, 34, 34, 0.67) 0%, #222222 100%);
+    color: rgba(255, 255, 255, 1);
+}
+
+.banking__item--title {
+    font-weight: 600;
+    line-height: 100%;
+    font-size: 20px;
+    letter-spacing: 0%;
+}
+
+.banking__item--desc {
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 100%;
+}
+
+@media (max-width: 1125px) {
+    .banking__image {
+        display: none;
+    }
+
+    .banking__content {
+        flex-direction: column;
+    }
+}

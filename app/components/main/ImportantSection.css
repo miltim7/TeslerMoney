@@ -1,0 +1,133 @@
+/* ========== important ========== */
+.important {
+    padding: var(--padding);
+}
+
+.important__title {
+    font-weight: 600;
+    font-size: var(--font-size-titles);
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.important_buttons {
+    display: flex;
+    column-gap: 15px;
+    margin-top: 15px;
+}
+
+.important__table {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
+}
+
+.important__table--firts-item {
+
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    line-height: 100%;
+    color: rgba(38, 36, 34, 1);
+}
+
+.important__table--second-item {
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    max-width: 230px;
+    opacity: 0.8;
+    color: rgba(38, 36, 34, 1);
+}
+
+.important__text {
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    line-height: 112.00000000000001%;
+    color: rgba(38, 36, 34, 0.7);
+}
+
+.important__btn {
+    padding: var(--padding-btn);
+
+    font-weight: 500;
+    font-size: var(--font-size-btn);
+    border: none;
+    border-radius: 30px;
+}
+
+.important__btn--primary {
+    background: rgba(30, 115, 224, 1);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    min-width: 342px;
+    height: 46px;
+}
+
+.important__content {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.important__item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.important__item--img {
+    width: 45px;
+    height: 45px;
+}
+
+.important__item--block {
+    background: rgba(247, 246, 249, 1);
+    border-radius: 20px;
+    display: flex;
+    height: 100%;
+    position: relative;
+    padding: 25px;
+    row-gap: 22px;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.important__item--title {
+
+    font-weight: 600;
+    line-height: 100%;
+    font-size: 20px;
+    letter-spacing: 0%;
+}
+
+.important__item--desc {
+    font-weight: 500;
+    opacity: 0.9;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+@media (max-width: 1125px) {
+    .important__content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 432px) {
+    .important__btn--primary {
+        min-width: 200px;
+    }
+}

@@ -1,0 +1,19 @@
+.heroIndicator {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+}
+
+.indicatorLine {
+  width: 94px;
+  height: 3px;
+  border-radius: 50px;
+  background-color: rgba(30, 115, 224, 1);
+}
+
+.indicatorShort {
+  width: 21px;
+  height: 3px;
+  border-radius: 50px;
+  background-color: rgba(30, 115, 224, 1);
+}
