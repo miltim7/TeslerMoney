@@ -1,5 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
+import './RobotAssistant.css';
+
 
 export default function RobotAssistant() {
   const [currentMessage, setCurrentMessage] = useState('');
@@ -33,17 +35,12 @@ export default function RobotAssistant() {
   }, []);
 
   return (
-    <div
+    <div className='robotas'
       style={{
-        position: 'fixed',
-        bottom: '50px',
-        right: '50px',
-        width: '150px',
         zIndex: 1000,
         textAlign: 'center',
-        transition: 'opacity 0.3s ease-in-out',
         opacity: visible ? 1 : 0,
-        pointerEvents: visible ? 'auto' : 'none', // 🔑 вот это решает проблему
+        pointerEvents: visible ? 'auto' : 'none',
       }}
     >
       <img
@@ -52,16 +49,19 @@ export default function RobotAssistant() {
         style={{ width: '100%', marginBottom: '10px' }}
       />
       {currentMessage && (
-        <div
+        <div className='robotas__container'
           style={{
-            background: '#fff',
-            padding: '10px',
-            borderRadius: '10px',
-            boxShadow: '0 2px 6px rgba(0,0,0,0.2)',
-            fontSize: '14px',
+
           }}
         >
-          {currentMessage}
+          <img
+            src="/images/Union.png"
+            alt="Робот"
+            style={{ width: "500px", height: "127px" }}
+          />
+          <p>
+            {currentMessage}
+          </p>
         </div>
       )}
     </div>

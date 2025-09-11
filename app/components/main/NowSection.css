@@ -4,7 +4,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(180deg, #E8F2FF 0%, #FFFFFF 100%);
 }
 
 .now img {

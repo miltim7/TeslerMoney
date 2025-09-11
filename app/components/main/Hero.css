@@ -137,8 +137,9 @@
  }
 
  .hero__image.robot img {
-     width: 274px;
-     height: 362px;
+     width: 171px;
+     height: 171px;
+     top: 215px !important;
  }
 
  .hero__image img {
@@ -200,8 +201,8 @@
      }
 
      .hero__image.robot img {
-         width: 217px;
-         height: 307px;
+         width: 171px;
+         height: 171px;
          left: 55px;
      }
 

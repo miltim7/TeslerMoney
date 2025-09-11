@@ -10,20 +10,26 @@ import AdvantageSection from './AdvantageSection';
 import NowSection from './NowSection';
 import Hero from './Hero';
 import RobotAssistant from '../ui/RobotAssistant';
+import TeslerCoin from './TeslerCoin';
+import BusinessSection from './BusinessSection';
+import PrivateSection from './PrivateSection';
 
 const Home = () => {
-'use client';
+  'use client';
   return (
     <>
       <Hero />
       <LevelSection />
-      <AdvantageSection  />
-      <NowSection data-robot="А вот здесь расскажем о достижениях" />
+      <AdvantageSection />
+      <BusinessSection data-robot="Хотите ли вы открыть счет для физического лица? Могу предожить Вам приватные условия" />
+      <PrivateSection data-robot="Вы занимаетесь бизнесом? У меня есть для Вас эксклюзтвное бизнес предложение!" />
+      <NowSection  />
       <AboutSection />
-      <FaqSection />
       <AppSection />
-      <ImportantSection  data-robot="А вот здесь расскажем о текущей обстановки"  />
+      <ImportantSection  />
       <BankingSection />
+      <TeslerCoin />
+      <FaqSection />
       <ReviewsSection />
       <RobotAssistant />
     </>

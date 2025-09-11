@@ -1,0 +1,117 @@
+.private {
+    padding: var(--padding);
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+    column-gap: 30px;
+}
+
+.private__block {
+    display: flex;
+    align-items: flex-end;
+    padding: 35px;
+    width: 420px;
+    height: 570px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.private__block h2 {
+    font-size: 55px;
+    z-index: 2;
+    line-height: 100%;
+    color: rgba(255, 255, 255, 1);
+}
+
+.private__block--image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.private__item {
+    display: flex;
+    column-gap: 10px;
+    flex-direction: row;
+}
+
+.private__item--block {
+    display: flex;
+    width: 195px;
+    height: 263px;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.private__item--block:nth-child(1) {
+    background: linear-gradient(180deg, rgba(34, 34, 34, 0.67) -25.5%, #222222 100%);
+    box-shadow: 0px 0px 42px 0px rgba(18, 18, 18, 0.05);
+}
+
+.private__item--block:nth-child(2) {
+    background: rgba(29, 112, 218, 1);
+    box-shadow: 0px 0px 42px 0px rgba(18, 18, 18, 0.05);
+
+}
+
+.private__item--block:nth-child(4) {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 42px 0px rgba(18, 18, 18, 0.05);
+}
+
+.private__item--block:nth-child(3) {
+    background: rgba(247, 246, 249, 1);
+    box-shadow: 0px 0px 42px 0px rgba(18, 18, 18, 0.05);
+}
+
+.private__item--block p {
+    font-size: 22px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.private__item--block:nth-child(3) p {
+    color: black;
+}
+
+.private__item--block:nth-child(4) p {
+    color: black;
+}
+
+.private__item--block img {
+    width: 55px;
+    height: 55px;
+}
+
+@media screen and (max-width: 1440px) {
+    .private__item{
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .private{
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .private__block h2{
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .private{
+        width: 100%;
+    }
+    .private__item--block{
+        width: 100%;
+    }
+}

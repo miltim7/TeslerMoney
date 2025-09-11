@@ -1,7 +1,6 @@
 /* FAQ */
 .faq {
     padding: var(--padding);
-    background: linear-gradient(180deg, #FFFFFF 0%, #E8F2FF 100%);
 }
 
 .faq__title {
@@ -43,15 +42,3 @@
     margin-top: 5px;
 }
 
-@media screen and (max-width:690px) {
-    .faq {
-        margin-top: 420px;
-    }
-}
-
-@media (max-width: 1125px) {
-
-    .faq {
-        margin-top: 223px;
-    }
-}

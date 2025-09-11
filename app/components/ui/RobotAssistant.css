@@ -1,0 +1,40 @@
+.robotas {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 150px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.robotas__container {
+    position: absolute;
+    top: -64px;
+    right: 94px;
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.robotas__container p {
+    position: absolute;
+    top: 49px;
+    width: 63%;
+    right: 90px;
+}
+
+@media (max-width: 500px) {
+    .robotas {
+        right: 0px;
+        bottom: 0px;
+    }
+
+    .robotas__container {
+        right: 58px;
+    }
+
+    .robotas__container img {
+        width: 372px !important;
+        height: 139px !important;
+    }
+}

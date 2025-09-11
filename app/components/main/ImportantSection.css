@@ -131,3 +131,16 @@
         min-width: 200px;
     }
 }
+
+@media screen and (max-width:690px) {
+    .important  {
+        margin-top: 420px;
+    }
+}
+
+@media (max-width: 1125px) {
+
+    .important  {
+        margin-top: 322px;
+    }
+}
